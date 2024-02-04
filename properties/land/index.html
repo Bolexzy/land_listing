@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/stylesheet/globals.css">
+    <title>Document</title>
+</head>
+
+<body class="w-full min-h-screen">
+    <!-- header section  -->
+    <header class="header flex items-center justify-between xl:px-32 lg:px-24 md:px-16 sm:px-8 px-4 py-8">
+        <div class="logo self-stretch flex items-center gap-4">
+            <div class="flex items-start justify-center gap-2">
+                <div class="inline-block">
+                    <img src="/Assets/logo.png" alt="logo" class="w-8 h-auto">
+                </div>
+
+                <a href="/properties/index.html">
+                    <h2 class=" text-lg sm:text-xl md:text-2xl font-bold text-gray-900">
+                        Land Listing
+                    </h2>
+                </a>
+
+            </div>
+
+
+        </div>
+        <div class=" flex items-center gap-3">
+            <button class="btn btn btn-outline btn-success btn-wide  md:w-[150px] sm:w-[120px] w-[80px]">
+                <a href="signup.html" class="text-black">Sign In</a>
+
+            </button>
+            <button class="btn btn  btn-active btn-success w-[80px] sm:w-auto">
+
+                <a href="login.html" class="text-white">Sign Up</a>
+            </button>
+        </div>
+    </header>
+
+    <section
+        class="w-full h-full grid grid-flow-col auto-cols-fr xl:px-32 lg:px-24 md:px-10 sm:px-8 px-4 py-8 gap-x-7 gap-y-7 lg:gap-x-10">
+
+        <div class="col-span-full md:col-span-3">
+            <img src="" alt="" id="land_image">
+        </div>
+        <div class="col-span-full md:col-span-3">
+            <!-- detail container  -->
+
+            <div class="w-full text-left flex flex-col gap-2">
+                <p class="text-sm md:text-base text-slate-500">Land Description</p>
+                <h1 class="text-xl md:text-3xl font-bold" id="land_name"></h1>
+                <hr class="my-2">
+                <div class="flex justify-between">
+                    <p class="capitalize font-medium">price</p>
+                    <p class="text-green-800" id="land_price">N</p>
+                </div>
+                <hr class="my-2">
+                <div class="flex justify-between">
+                    <p class="capitalize font-medium">Area in metres2</p>
+                    <p class="text-green-800" id="land_area"></p>
+                </div>
+                <div class="my-4">
+                    <a href="/properties/">
+                        <button
+                            class="btn btn-block bg-green-800 border-none rounded-none text-green-50 hover:bg-green-900 hover:shadow hover:shadow-md hover:shadow-green-50">
+                            Check Other Lands
+                        </button>
+                    </a>
+                </div>
+                <div class="flex gap-6 flex-col w-full lg:w-4/5">
+                    <p class="capitalize font-light " id="land_description"></p>
+                    <p class="capitalize font-light ">Product Code: Nyali64cb993e0f5bfc168f84a147</p>
+                    <p class="capitalize font-light " id="land_location">Location: </p>
+                </div>
+                <hr class="my-2">
+                <!-- contact collapse  -->
+                <div class="collapse rounded-none">
+                    <input type="checkbox" class="peer" />
+                    <div
+                        class="collapse-title bg-white/25 text-primary-content peer-checked:bg-slate-50 peer-checked:text-secondary-content">
+                        <div class="flex justify-between items-center">
+                            <p class="capitalize">contact us</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div
+                        class="collapse-content bg-slate-50 text-primary-content peer-checked:bg-slate-50 peer-checked:text-secondary-content">
+
+                        <div class="flex flex-col items-start justify-around my-7 gap-7">
+                            <!-- phone option  -->
+
+                            <div class="flex gap-5">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M20.25 3.75v4.5m0-4.5h-4.5m4.5 0-6 6m3 12c-8.284 0-15-6.716-15-15V4.5A2.25 2.25 0 0 1 4.5 2.25h1.372c.516 0 .966.351 1.091.852l1.106 4.423c.11.44-.054.902-.417 1.173l-1.293.97a1.062 1.062 0 0 0-.38 1.21 12.035 12.035 0 0 0 7.143 7.143c.441.162.928-.004 1.21-.38l.97-1.293a1.125 1.125 0 0 1 1.173-.417l4.423 1.106c.5.125.852.575.852 1.091V19.5a2.25 2.25 0 0 1-2.25 2.25h-2.25Z" />
+                                    </svg>
+
+                                </div>
+                                <p>Call Seller</p>
+                            </div>
+                            <div class="flex gap-5">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 0 1-.825-.242m9.345-8.334a2.126 2.126 0 0 0-.476-.095 48.64 48.64 0 0 0-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0 0 11.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155" />
+                                    </svg>
+
+
+                                </div>
+                                <p>Text Seller</p>
+                            </div>
+                            <div class="flex gap-5">
+                                <div>
+                                    <svg fill="#000000" height="200px" width="200px" version="1.1" id="Layer_1"
+                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        viewBox="0 0 308 308" xml:space="preserve" class="w-6 h-6">
+                                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round">
+                                        </g>
+                                        <g id="SVGRepo_iconCarrier">
+                                            <g id="XMLID_468_">
+                                                <path id="XMLID_469_"
+                                                    d="M227.904,176.981c-0.6-0.288-23.054-11.345-27.044-12.781c-1.629-0.585-3.374-1.156-5.23-1.156 c-3.032,0-5.579,1.511-7.563,4.479c-2.243,3.334-9.033,11.271-11.131,13.642c-0.274,0.313-0.648,0.687-0.872,0.687 c-0.201,0-3.676-1.431-4.728-1.888c-24.087-10.463-42.37-35.624-44.877-39.867c-0.358-0.61-0.373-0.887-0.376-0.887 c0.088-0.323,0.898-1.135,1.316-1.554c1.223-1.21,2.548-2.805,3.83-4.348c0.607-0.731,1.215-1.463,1.812-2.153 c1.86-2.164,2.688-3.844,3.648-5.79l0.503-1.011c2.344-4.657,0.342-8.587-0.305-9.856c-0.531-1.062-10.012-23.944-11.02-26.348 c-2.424-5.801-5.627-8.502-10.078-8.502c-0.413,0,0,0-1.732,0.073c-2.109,0.089-13.594,1.601-18.672,4.802 c-5.385,3.395-14.495,14.217-14.495,33.249c0,17.129,10.87,33.302,15.537,39.453c0.116,0.155,0.329,0.47,0.638,0.922 c17.873,26.102,40.154,45.446,62.741,54.469c21.745,8.686,32.042,9.69,37.896,9.69c0.001,0,0.001,0,0.001,0 c2.46,0,4.429-0.193,6.166-0.364l1.102-0.105c7.512-0.666,24.02-9.22,27.775-19.655c2.958-8.219,3.738-17.199,1.77-20.458 C233.168,179.508,230.845,178.393,227.904,176.981z">
+                                                </path>
+                                                <path id="XMLID_470_"
+                                                    d="M156.734,0C73.318,0,5.454,67.354,5.454,150.143c0,26.777,7.166,52.988,20.741,75.928L0.212,302.716 c-0.484,1.429-0.124,3.009,0.933,4.085C1.908,307.58,2.943,308,4,308c0.405,0,0.813-0.061,1.211-0.188l79.92-25.396 c21.87,11.685,46.588,17.853,71.604,17.853C240.143,300.27,308,232.923,308,150.143C308,67.354,240.143,0,156.734,0z M156.734,268.994c-23.539,0-46.338-6.797-65.936-19.657c-0.659-0.433-1.424-0.655-2.194-0.655c-0.407,0-0.815,0.062-1.212,0.188 l-40.035,12.726l12.924-38.129c0.418-1.234,0.209-2.595-0.561-3.647c-14.924-20.392-22.813-44.485-22.813-69.677 c0-65.543,53.754-118.867,119.826-118.867c66.064,0,119.812,53.324,119.812,118.867 C276.546,215.678,222.799,268.994,156.734,268.994z">
+                                                </path>
+                                            </g>
+                                        </g>
+                                    </svg>
+
+                                </div>
+                                <p>WhatsApp</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="my-2">
+
+            </div>
+        </div>
+    </section>
+
+    <!-- footer section  -->
+    <footer class="footer p-10 bg-base-200 text-base-content">
+        <aside>
+            <img src="/Assets/logo.png" alt="logo" class="w-32 h-32">
+            <p><span class="text-xl font-bold">Land Listing.</span><br>Explore an extensive collection of premium land
+                listings, <br>
+                carefully curated to meet your diverse needs and aspirations.</p>
+            <p class="mt-5 font-light">© Copyright 2024 Land Listing. All rights reserved.</p>
+        </aside>
+        <nav>
+            <h6 class="footer-title">Company</h6>
+            <a class="link link-hover">About us</a>
+            <a class="link link-hover">Contact</a>
+            <a class="link link-hover">Jobs</a>
+            <a class="link link-hover">Press kit</a>
+        </nav>
+        <nav>
+            <h6 class="footer-title">Legal</h6>
+            <a class="link link-hover">Terms of use</a>
+            <a class="link link-hover">Privacy policy</a>
+            <a class="link link-hover">Cookie policy</a>
+        </nav>
+    </footer>
+
+    <script>
+        let urlParams = new URLSearchParams(window.location.search);
+        let searchQuery = urlParams.get("search");
+        let land_name = urlParams.get("name");
+        let land_description = urlParams.get("description");
+        let land_price = urlParams.get("price");
+        let land_location = urlParams.get("location");
+        let land_area = urlParams.get("area");
+        let land_image = urlParams.get("image");
+
+        if (searchQuery) {
+            alert("You searched for: " + searchQuery);
+        }
+
+        const landName = document.getElementById('land_name');
+        landName.innerHTML = land_name;
+        const landDescription = document.getElementById('land_description');
+        landDescription.innerHTML = land_description;
+        const landPrice = document.getElementById('land_price');
+        landPrice.innerHTML = 'N ' + land_price;
+        const landLocation = document.getElementById('land_location');
+        landLocation.innerHTML = 'Location: ' + land_location;
+        const landArea = document.getElementById('land_area');
+        landArea.innerHTML = land_area;
+        const landImage = document.getElementById('land_image');
+        landImage.src = '/Assets/' + land_image + '.jpeg';
+    </script>
+</body>
+
+</html>

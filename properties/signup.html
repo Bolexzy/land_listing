@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/stylesheet/globals.css">
+    <title>Document</title>
+</head>
+
+<body class="w-full min-h-screen">
+    <main class="w-full h-screen">
+        <div class="w-full h-full grid grid-flow-col auto-cols-fr xl:pl-32 lg:pl-24 md:pl-10 sm:pl-8 pl-4 pr-0">
+
+            <!-- content left  -->
+            <div class="!w-full h-full lg:w-1/2 col-span-3 py-7 flex flex-col items-start !justify-between ">
+
+                <!-- header section  -->
+                <header class="w-full flex items-center justify-between pr-16">
+                    <div class="logo self-stretch flex items-center gap-4">
+                        <div class="flex items-start justify-center gap-2">
+                            <div class="inline-block">
+                                <img src="/Assets/logo.png" alt="logo" class="w-8 h-auto">
+                            </div>
+
+                            <a href="/properties/index.html">
+                                <h2 class="text-lg text-nowrap sm:text-xl md:text-2xl font-bold text-gray-900">
+                                    Land Listing
+                                </h2>
+                            </a>
+
+                        </div>
+
+
+                    </div>
+                    <div class=" flex items-center gap-3">
+                        <a class="link text-slate-500" href="/properties/index.html">
+                            < Back to Listings</a>
+                    </div>
+                </header>
+
+                <div class="my-auto w-full flex flex-col justify-between">
+                    <h3 class="text-2xl sm:text-4xl md:text-5xl  tracking-wide font-bold text-gray-900">
+                        Welcome to Land Listing
+                    </h3>
+                    <div class="my-5 flex flex-col gap-5">
+                        <label class="form-control w-full max-w-xs">
+                            <div class="label">
+                                <span class="label-text">Username</span>
+                            </div>
+                            <input type="text" placeholder="John Doe"
+                                class="input input-bordered rounded-none w-full min-w-[400px] h-14 bg-[#F7F7F7]" />
+                        </label>
+                        <label class="form-control w-full max-w-xs">
+                            <div class="label">
+                                <span class="label-text">Password</span>
+                            </div>
+                            <input type="text" placeholder="Type Password"
+                                class="input input-bordered rounded-none w-full min-w-[400px] h-14 bg-[#F7F7F7]" />
+                        </label>
+                        <div class="my-4">
+                            <button
+                                class="btn btn-block  border-none max-w-[400px] rounded-none text-white hover:shadow hover:shadow-md hover:shadow-green-50">
+                                Create An Account
+                            </button>
+                        </div>
+                        <div class=" -mt-2">
+                            <p>Already a user? <span class="underline text-sky-500"><a href="/properties/login.html">
+                                        Sign in
+                                    </a></span></p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- review right  -->
+            <div
+                class="!w-full h-full bg-green-800 lg:w-1/2 col-span-3 flex items-center justify-center xl:px-32 lg:px-24 gap-4">
+                <div class="flex flex-col items-center w-full justify-center text-left gap-4 max-w-xs text-white/75">
+                    <h2 class="text-2xl font-extrabold text-white">
+                        "Land Listing has helped me save hours of work. I can now easily find the best land for my
+                        business and get in touch with the owners."
+                    </h2>
+                    <p class="text-left self-start font-bold">May Andrews <br> <span
+                            class="font-light text-slate-200">Business Woman</span></p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/stylesheet/globals.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- main content -->
+    <main class="w-full flex flex-col gap-4 lg:flex-row items-center justify-around min-h-screen">
+        <!-- content  -->
+        <div class="w-full h-full lg:w-1/2 md:px-16 sm:px-8 lg:px-32 px-8 flex flex-col items-start gap-4 order-2">
+            <!-- header and logo -->
+            <header class="mb-20 pt-8 hidden lg:flex ">
+                <div class="flex items-start gap-2">
+                    <div class="inline-block">
+                        <img src="/Assets/logo.png" alt="logo" class="w-8 h-auto">
+                    </div>
+                    <h2 class="text-2xl font-bold text-gray-900">Land Listing</h2>
+                </div>
+            </header>
+
+            <h3 class="text-4xl md:text-6xl  tracking-wide font-bold text-gray-900">
+                Discover
+                Your Perfect is real
+            </h3>
+            <p class="text-gray-600 text-lg">Explore an extensive collection of premium land listings, carefully curated
+                to meet
+                your diverse needs and aspirations.</p>
+            <div class="flex flex-col items-start gap-3">
+                <div class="w-full flex gap-3 items-center">
+                    <div class="badge badge-success badge-md"></div>
+                    <p class="text-gray-600 text-md capitalize"> land listings from various locations</p>
+                </div>
+                <div class="w-full flex gap-3 items-center">
+                    <div class="badge badge-success badge-md"></div>
+                    <p class="text-gray-600 text-md capitalize"> connect with trusted sellers </p>
+                </div>
+                <div class="w-full flex gap-3 items-center">
+                    <div class="badge badge-success badge-md"></div>
+                    <p class="text-gray-600 text-md capitalize"> Discover your dream property </p>
+                </div>
+            </div>
+
+            <button class="btn btn-active btn-lg text-white">
+                <a href="/properties/index.html">Get Started</a>
+            </button>
+
+            <div class="my-3">
+                <p class="text-gray-400 text-lg capitalize">Partners</p>
+                <div class="flex items-center gap-2">
+                    <div class="inline-block">
+                        <img src="/Assets/Airbnb.svg" alt="Airbnb" class="w-38 h-auto">
+                    </div>
+                    <div class="inline-block">
+                        <img src="/Assets/Booking.svg" alt="booking logo" class="w-38 h-auto">
+                    </div>
+                    <div class="inline-block">
+                        <img src="/Assets/Plum Guide.svg" alt="booking logo" class="w-38 h-auto">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- image -->
+        <div
+            class="flex flex-col lg:flex-row items-center w-full lg:w-1/2 h-full lg:h-screen order-1 lg:order-2 lg:mb-0 mb-5">
+            <!-- header and logo -->
+            <header class="md:py-16 lg:hidden self-start p-8">
+                <div class="flex items-start gap-2">
+                    <div class="inline-block">
+                        <img src="/Assets/logo.png" alt="logo" class="w-8 h-auto">
+                    </div>
+                    <h2 class="text-2xl font-bold text-gray-900">Land Listing</h2>
+                </div>
+            </header>
+            <div class="lg:w-[100px] w-full h-[50px]  lg:h-full bg-green-600 lg:order-1 order-2"></div>
+            <div class="inline-block w-full order-1">
+                <img src="/Assets/landHero.png" alt="hero"
+                    class="w-full md:h-[550px] sm:h-[500px] h-[450px] lg:h-screen">
+            </div>
+        </div>
+
+    </main>
+
+</body>
+
+</html>
