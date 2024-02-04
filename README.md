@@ -2,6 +2,8 @@
 
 This project is a conversion of the YelpCamp design into a land listing web page. It's a platform where users can lists and purchase lands. The project is built using pure HTML and CSS.
 
+[live link](https://land-listing.vercel.app)
+
 ## Features
 
 - **User Registration:** Users can create a new account and log in.
